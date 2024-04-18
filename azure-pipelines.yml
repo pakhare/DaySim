@@ -15,7 +15,7 @@ trigger:
 
 # System requirements:
 # git, git-lfs, python, and Rscript must all be installed and available on the system PATH
-pool: Default
+pool: WRJSOFPPW01
 
 # Test data to run:
 #   testDir   - the directory to store the test data. this should be a persistent location
