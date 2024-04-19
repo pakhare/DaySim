@@ -90,11 +90,7 @@ steps:
 
 
 
-- script: $(System.DefaultWorkingDirectory)\DaySim_dist\DaySim.exe --version
-  displayName: Print DaySim version
 
-- script: $(System.DefaultWorkingDirectory)\DaySim_dist\DaySim.exe --help
-  displayName: Print help text
 
 # Use git lfs to pull entire data files, not just pointers
 - script: |
