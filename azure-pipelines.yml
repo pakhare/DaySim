@@ -90,10 +90,10 @@ steps:
 
 - task: VSBuild@1
   displayName: Build DaySim
+  
   inputs:
-    solution: $(solution)
-    platform: $(buildPlatform)
-    configuration: $(buildConfiguration)
+    solution: '**/*.sln'
+    msbuildArchitecture: 'x64'
 
 - script: $(System.DefaultWorkingDirectory)\DaySim_dist\DaySim.exe --version
   displayName: Print DaySim version
