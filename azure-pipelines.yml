@@ -88,12 +88,7 @@ steps:
   inputs:
     restoreSolution: $(solution)
 
-- task: VSBuild@1
-  displayName: Build DaySim
-  inputs:
-    solution: $(solution)
-    platform: $(buildPlatform)
-    configuration: $(buildConfiguration)
+
 
 - script: $(System.DefaultWorkingDirectory)\DaySim_dist\DaySim.exe --version
   displayName: Print DaySim version
