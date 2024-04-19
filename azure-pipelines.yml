@@ -94,7 +94,6 @@ steps:
     solution: $(solution)
     platform: $(buildPlatform)
     configuration: $(buildConfiguration)
-    vsVersion: '15.0'
 
 - script: $(System.DefaultWorkingDirectory)\DaySim_dist\DaySim.exe --version
   displayName: Print DaySim version
